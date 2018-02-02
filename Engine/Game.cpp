@@ -28433,6 +28433,8 @@ void Game::ComposeFrame()
 	if( !isStarted )
 	{
 		DrawTitleScreen( 325,211 );
+		Color c = { 127, 0, 0 };
+		gfx.DrawCircle(150, 150, 40, c);
 	}
 	else
 	{
