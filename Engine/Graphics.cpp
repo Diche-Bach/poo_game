@@ -239,7 +239,7 @@ Graphics::Graphics( HWNDKey& key )
 	pSysBuffer = reinterpret_cast<Color*>( 
 		_aligned_malloc( sizeof( Color ) * Graphics::ScreenWidth * Graphics::ScreenHeight,16u ) );
 }
-
+/*
 void Graphics::DrawCircle(int x, int y, int radius, Color c)
 {
 	const int rad_sq = radius * radius;
@@ -256,6 +256,7 @@ void Graphics::DrawCircle(int x, int y, int radius, Color c)
 		}
 	}
 }
+*/
 
 Graphics::~Graphics()
 {
