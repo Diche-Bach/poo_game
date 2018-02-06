@@ -1,5 +1,7 @@
 #pragma once
 
+//A two-dimensional vector class (x and y dimensions only, no z for example), thus "Vec2"
+
 class Vec2
 {
 public:
@@ -9,7 +11,7 @@ public:
 	Vec2& operator+=(const Vec2& rhs);
 	Vec2 operator*(float rhs) const;
 	Vec2& operator*=(float rhs);
-private:
+
 	float x;
 	float y;
 };
