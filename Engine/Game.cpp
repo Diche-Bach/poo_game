@@ -21,6 +21,7 @@
 #include "MainWindow.h"
 #include "Game.h"
 #include <random>
+#include "Vec2.h"
 
 Game::Game( MainWindow& wnd )
 	:
@@ -32,6 +33,17 @@ Game::Game( MainWindow& wnd )
 	goal( xDist( rng ),yDist( rng ) ),
 	meter( 20,20 )
 {
+	// Vector Test code
+	/* 
+	Vec2 v0(20.0f, 13.0f);
+	Vec2 v1(-10.0f, 1.5f);
+	Vec2 v2 = v0 + v1;
+	v2 += v1;
+	float half = 0.5f;
+	Vec2 v3 = v0 * half;
+	Vec2 v4 = v1 *= half;
+	*/
+
 	std::uniform_real_distribution<float> vDist( -2.0f * 60.0f, 2.0f * 60.0f );
 	for( int i = 0; i < nPoo; ++i )
 	{
